@@ -1,0 +1,17 @@
+{
+  "name": "KAIROS - Control de Asistencia",
+  "short_name": "KAIROS",
+  "description": "Sistema de Control de Asistencia Estudiantil",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e3a5f",
+  "theme_color": "#1e3a5f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "kairos-icon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
