@@ -51,12 +51,18 @@ El proyecto usa:
 Para que funcione el envío automático de QR:
 1. Crear cuenta en https://www.emailjs.com/
 2. Crear un servicio de email
-3. Crear una plantilla con las variables:
-   - `{{to_email}}`
-   - `{{to_name}}`
-   - `{{codigo}}`
-   - `{{qr_image}}`
-4. Obtener la Public Key y configurar en el código
+3. En Email Templates, crear una plantilla nueva:
+   - Nombre: cualquier nombre (ej: kairos_qr)
+   - En el cuerpo del email usar HTML para mostrar la imagen:
+     ```html
+     <img src="{{qr_image}}" width="200">
+     ```
+   - Las variables disponibles son: `to_email`, `to_name`, `codigo`, `qr_image`
+4. Obtener el Service ID y la Public Key
+5. Configurar en el archivo `index.html`:
+   - Cambiar `YOUR_EMAILJS_PUBLIC_KEY` por tu Public Key
+   - Cambiar `service_ks7xe43` por tu Service ID
+   - Cambiar `template_kairos` por el nombre de tu plantilla
 
 ## Uso
 
@@ -95,11 +101,6 @@ El proyecto está configurado para desplegarse en Firebase Hosting:
 ```bash
 firebase deploy
 ```
-
-## Base de Datos
-
-El diagrama de la base de datos se encuentra en:
-`Base de Datos I/Kairos - Base de Datos/Control Asistencia .drawio`
 
 ### Colecciones en Firestore:
 - **usuarios**: Datos de usuarios (profesores, regentes, dirección)
