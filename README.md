@@ -110,4 +110,4 @@ firebase deploy
 
 ## Licencia
 
-Este proyecto es para uso educativo y escolar.
+Este proyecto es para uso educativo y escolar en Bolivia - Santa Cruz.
