@@ -109,4 +109,4 @@ El diagrama de la base de datos se encuentra en:
 
 ## Licencia
 
-Este proyecto es para uso educativo y escolar.
+Este proyecto es para uso educativo y escolar en Bolivia - Santa Cruz.
